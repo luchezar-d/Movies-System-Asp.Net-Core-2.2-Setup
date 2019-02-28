@@ -31,7 +31,7 @@ namespace MoviesSystem.Web
 
             services.AddDbContext<MoviesSystemDbContext>(options =>
                     options.UseSqlServer(
-                        this.Configuration.GetConnectionString("MoviesSystemDbContextConnection")));
+                        this.Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddDefaultIdentity<User>()
                 .AddEntityFrameworkStores<MoviesSystemDbContext>();

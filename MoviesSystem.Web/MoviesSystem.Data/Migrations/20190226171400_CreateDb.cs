@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MoviesSystem.Web.Data.Migrations
+namespace MoviesSystem.Data.Migrations
 {
-    public partial class CreateIdentitySchema : Migration
+    public partial class CreateDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MoviesSystem.Data\MoviesSystem.Data.csproj" />
+    <ProjectReference Include="..\MoviesSystem.Services\MoviesSystem.Services.csproj" />
   </ItemGroup>
 
 </Project>
