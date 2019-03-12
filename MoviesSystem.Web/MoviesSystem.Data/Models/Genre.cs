@@ -17,5 +17,7 @@ namespace MoviesSystem.Data.Models
         [Required]
         [StringLength(100, MinimumLength = 1)]
         public string Name { get; set; }
+
+        public List<GenreMovie> Movies { get; set; } = new List<GenreMovie>();
     }
 }

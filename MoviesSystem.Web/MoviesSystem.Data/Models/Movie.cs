@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace MoviesSystem.Data.Models
@@ -30,5 +31,9 @@ namespace MoviesSystem.Data.Models
         [Required]
         [StringLength(500, MinimumLength = 2)]
         public string TrailerPath { get; set; }
+
+        public List<UserMovie> Users { get; set; } = new List<UserMovie>();
+
+        public List<GenreMovie> Genres { get; set; }
     }
 }
